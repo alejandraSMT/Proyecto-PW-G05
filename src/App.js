@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Login from './pages/login/login';
 
 function App() {
   return (
@@ -22,4 +23,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;
