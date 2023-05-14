@@ -1,3 +1,9 @@
-.input:focus {
-    color: red;  
+.form-control:focus + .form-label{
+    color: red;
+}
+
+input:focus + label {
+    top: -18px;
+    scale: 1.05;
+    color: purple;
 }
