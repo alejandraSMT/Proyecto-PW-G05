@@ -1,24 +1,34 @@
+import { useState } from "react";
+import "../login.css";
+
 import { FloatingLabel } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
-import "../login.css";
+import { FormControl } from "react-bootstrap";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 function LogInField(){    
     return(
-        <Form>
-            <Form.Group controlId = 'user-email_input'>
-                <FloatingLabel label = "Usuario o Correo">
-                    <Form.Control type = "text" placeholder = 'Usuario o Correo'>
-                    </Form.Control>
-                </FloatingLabel>
-            </Form.Group>
+        <Container>
             <br></br>
-            <Form.Group controlId = 'password_input'>
-                <FloatingLabel label = "Contraseña">
-                    <Form.Control type = "password" placeholder = 'Contraseña'>
+            <Row>
+                <Form.Group>
+                    <Form.Label>Usuario o Correo
+                    </Form.Label>
+                    <Form.Control type = "text">
                     </Form.Control>
-                </FloatingLabel>
-            </Form.Group>
-        </Form>
+                </Form.Group>
+            </Row>
+            <Row>
+                <Form.Group>
+                    <Form.Label id = 'password'>Password
+                    </Form.Label>
+                    <Form.Control type="password"></Form.Control>
+                </Form.Group>
+            </Row>
+        </Container>
     );
 }
 

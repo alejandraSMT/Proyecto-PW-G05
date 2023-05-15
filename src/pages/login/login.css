@@ -1,9 +1,44 @@
-.form-control:focus + .form-label{
-    color: red;
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+.mainBody {
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
-input:focus + label {
-    top: -18px;
-    scale: 1.05;
+/* Quita la sombra cuando le das click*/
+.form-control:focus {
+    box-shadow: none;
+    border-color: purple;
+}
+
+/* Atributos del recuadro de texto */
+.form-control {
+    border-color: purple;
+    border-radius: 3px;
     color: purple;
+    width: 35%;
+    max-width: 40%;
+}
+
+/* Atributos del texto (label) en el borde superior */
+.form-label {
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    transform: translateY(15px) translateX(-2px) scale(0.85);
+    user-select: none;
+    color: purple;
+    line-height: 1rem;
+}
+
+#password {
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    transform: translateY(15px) translateX(2px) scale(0.85);
+    user-select: none;
+    color: purple;
+    line-height: 1rem;
 }
