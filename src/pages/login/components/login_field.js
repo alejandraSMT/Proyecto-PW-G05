@@ -1,17 +1,13 @@
-import { useState } from "react";
 import "../login.css";
 
-import { FloatingLabel } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
-import { FormControl } from "react-bootstrap";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 
 function LogInField(){    
     return(
-        <Container>
+        <Container class = "container">
             <br></br>
             <Row>
                 <Form.Group>
