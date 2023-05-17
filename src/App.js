@@ -1,27 +1,35 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-/*
-import MiBoton from "./components/MiBoton";
-import Citas from "./components/Citas";
-*/
+import Card_Docente from "./components/Card_Docente";
+import Horario from "./components/Horario";
+import "./components/css/estilos.css"
+
 function MyApp(){ //lo que se mostrata
   return (
-    <div className="container">
+    
+    <div>
       
-      <div>
-        <h1>Citas</h1>
+      <div class="container">
+        <br/>
+        <h1>Citas</h1> 
         <hr/>
+        <Card_Docente/>  
+     
       </div>
-      <div>
-        Fechas y horarios disponibles
-        <hr/>
-      </div>
-      <img></img>
-      Nombre del profesor
-      <br/>
-      Grado
+
       <br/>
 
-    </div>
+      <div class="container">
+
+        <b>Fechas y horarios disponibles</b>
+        <hr/>
+        <Horario/>
+        <br/>
+              <li>Las sesiones son de 30 minutos</li>
+        <br/>     
+        </div>
+        
+    </div> 
+    
   );
 }
 
