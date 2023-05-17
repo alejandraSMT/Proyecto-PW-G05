@@ -1,23 +1,24 @@
 import {Component} from "react";
 import Curso from "./Curso";
-import perfil from "./images/perfil.jpg";
+import perfil from "./images/perfil.png";
 import iniciales from "./images/iniciales_logo.png";
-
 
 export class Card_Docente extends Component{
 
     render(){ //obligatorio
         return (
-            <div class="container" id="usuario-docente"> 
-                <div class="row align-items-start" id="fila-docente">
-
+            <div class="container" id="container-docente"> 
+                <hr id="linea-encabezado"/>
+                <div id="lado-izquierda">
+                    
                     <div class="col">
 
                         <p id="logo-forma">
+                        
                         <img src={iniciales} class="rounded-circle" id="estilo-logo"/>
                             <div>
-                            <div>Nombre del profesor</div>
-                            <div>Titulo</div>
+                            <div><b>Nombre del profesor</b></div>
+                            <div id="titulo-docente">Titulo</div>
                             </div>
                         </p>
                             
@@ -38,22 +39,30 @@ export class Card_Docente extends Component{
                         </div>
 
                         <div class="col">
+                            
                             Correo electronico
                             <br/>
                             <b><u>correo@gmail.com</u></b>
                         </div>
                 </div>
+                <br/>
 
                 <div  class="row align-items-start">
-                        Cursos
-                        <br/>
-                        <br/>
-                        <Curso/>  
-                        <br/>
-                        <br/>
+                    <div class="col" id="lado-izquierda">
+                    Cursos:
+                    </div>  
+                </div>
+                
+                
+                <div class="row align-items-start justify-content-center" >
+                <div class="col-12 text-center">
+                  <Curso/> 
+                  
+                </div>
+                         
                 </div>
                     
-                
+                <br/>
             </div>
             
         );
