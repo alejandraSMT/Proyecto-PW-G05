@@ -1,28 +1,21 @@
 import "../login.css";
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col'
+import Form from "react-bootstrap/Form";
 
 function Buttons(){
     return(
-        <Container class = "btns">
-            <Row>
-                <Col>
-                    <Button id = "exit">
-                        Salir
-                    </Button>
-                </Col>
-                <Col>
-                    <Button id = "login">
-                        Ingresar
-                    </Button>
-                </Col>
-            </Row>
-        </Container>
+        <Form.Group id = "btns">
+            <Button id = "exit">
+                Salir
+            </Button>
+            <div style={{width: '30px'}}></div>
+            <Button id = "login">
+                Ingresar
+            </Button>
+
+        </Form.Group>
     );
 }
-
 
 export default Buttons;

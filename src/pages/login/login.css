@@ -18,10 +18,12 @@ span {
     font-weight: bold;
 }
 
-.btns {
+#btns {
     display: flex;
     flex-direction: row;
-    transform: translateX(100px);
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
 }
 
 .container {
