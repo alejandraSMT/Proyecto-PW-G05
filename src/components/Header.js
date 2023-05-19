@@ -23,9 +23,10 @@ export class Header extends Component {
                     {/* Menu lateral desplegable */}
 
                     <section
-                    className="offcanvas offcanvas-start"
+                    className="offcanvas offcanvas-start thin-menu"
                     id="menu"
                     tabindex="-1"
+
                     >
                         <div className="offcanvas-header">
                              {/*titulo*/}
