@@ -1,8 +1,6 @@
-/*import './App.css';*/
+import logo from './logo.svg';
+import './App.css';
 
-import Profile from "./pages/profile/profile";
-
-/*
 function App() {
   return (
    <div className="App">
@@ -10,8 +8,5 @@ function App() {
    </div>
   );
 }
-*/
 
-export default Profile;
-
-//export default App;
+export default App;
