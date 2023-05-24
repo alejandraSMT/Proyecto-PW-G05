@@ -1,5 +1,5 @@
 {
-  "name": "base",
+  "name": "pantalla_andrea",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,7 +10,9 @@
     "bootstrap-icons": "^1.10.5",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
+    "react-datepicker": "^4.11.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -37,5 +39,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
