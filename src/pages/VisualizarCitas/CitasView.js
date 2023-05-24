@@ -1,6 +1,6 @@
 import {Component} from "react";
 import { CitasCard } from "./CitasCard";
-import {Calificar} from "./calificar/Calificar"
+import {Calificar} from "../VisualizarCitas/calificar/Calificar"
 
 export function CitasView(){
 
