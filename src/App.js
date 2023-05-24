@@ -1,46 +1,26 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import Card_Docente from "./pages/ReservarCitas/components/Card_Docente";
-import Horario from "./pages/ReservarCitas/components/Horario";
-import Header from "./pages/ReservarCitas/components/Header";
-import "./pages/ReservarCitas/css/Card_Docente.css";
-import "./pages/ReservarCitas/css/Curso.css";
-import "./pages/ReservarCitas/css/Horario.css";
-import "./pages/ReservarCitas/css/Header.css";
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import logo from './logo.svg';
+import './App.css';
 
 
-
-function MyApp(){ //lo que se mostrata
-  
+function App() {
   return (
-    
-    <div>
-      <Header/>
-      <div class="container">
-        <br/>
-        <h1>Citas</h1> 
-        
-        <Card_Docente/>  
-     
-      </div>
-
-      <br/>
-
-      <div class="container">
-
-        <b>Fechas y horarios disponibles</b>
-        <hr/>
-
-        <Horario/>
-        <br/>
-              <li>Las sesiones son de 30 minutos</li>
-        <br/>
-             
-      </div>
-      
-    </div> 
-    
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
-export default MyApp;
+export default App;
