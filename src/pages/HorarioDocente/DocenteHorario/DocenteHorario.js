@@ -25,11 +25,6 @@ export function DocenteHorario() {
       [name]: value,
     }));
   };
-  const [counter, setCounter] = useState(0);
-
-  function increaseContador() {
-    setCounter(counter + 1);
-  }
 
   const handleAgregarClick = () => {
     console.log(DataFormulario);
@@ -40,26 +35,7 @@ export function DocenteHorario() {
       enlace: "",
     });
     setHorarios((prevHorarios) => [...prevHorarios, DataFormulario]);
-    return (
-      <HorarioCard
-        dia={Horarios.dia}
-        horaInicio={Horarios.horaInicio}
-        horaFin={Horarios.horaFin}
-      />
-    );
   };
-
-  /*const CardResultado = () => {
-    Horarios.map((Horario, index) => (
-      <HorarioCard
-        key={index}
-        contador={index + 1}
-        dia={Horario.dia}
-        horaInicio={Horario.horaInicio}
-        horaFin={Horario.horaFin}
-      />
-    ));
-  };*/
 
   return (
     <Container className="container">
