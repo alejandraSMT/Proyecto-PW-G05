@@ -1,6 +1,6 @@
-import {DocenteHorario} from "./DocenteHorario/DocenteHorario"
+import {DocenteHorario} from "./DocenteHorario/DocenteHorario";
 
-function App() {
+function HorarioDocente() {
   return (
     <div>
       <div className="container">
@@ -17,4 +17,4 @@ function App() {
   );
 }
 
-export default App;
+export default HorarioDocente;
