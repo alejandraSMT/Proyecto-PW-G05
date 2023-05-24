@@ -1,5 +1,5 @@
 import {useState} from "react";
-import { Calificar } from "../../calificar/Calificar";
+import { Calificar } from "../../../calificar/Calificar";
 import './BotonCalificar.css';
 
 function BotonCalificar(){

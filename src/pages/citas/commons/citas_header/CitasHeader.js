@@ -1,8 +1,7 @@
 import {Component} from "react";
 import "./CitasHeader.css"
-import BotonProgCita from "../programar_cita/BotonProgramarCita";
-import BotonVerCita from "../ver_cita/BotonVerCita"
-import Button from 'react-bootstrap/Button';
+import BotonProgCita from "../botones/programar_cita/BotonProgramarCita";
+import BotonVerCita from "../botones/ver_cita/BotonVerCita";
 
 export class CitasHeader extends Component{
     render(){

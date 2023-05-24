@@ -1,10 +1,10 @@
 import { Component } from "react";
-import "./CitasCard.css"
+import "./CitasCardAlumno.css"
 import logo from "./morado.png"
 import logo1 from './flowers_placeholder.jpg'
-import BotonCalificar from "./commons/botones/BotonCalificar";
+import { BotonCancelar } from "./commons/botones/cancelar/BotonCancelar";
 
-export function CitasCard(){
+export function CitasCardAlumno(){
     return(
         <>
             <div class="card" >
@@ -37,10 +37,7 @@ export function CitasCard(){
                     <div class="card-body">
                         <div class="row justify-content-end">
                             <div class="col text-end">
-                                <p>Calificación: 4,5 </p>
-                            </div>
-                            <div class="col text-end">
-                                <BotonCalificar/>
+                                <BotonCancelar/>
                             </div>
                             
                         </div>
@@ -51,4 +48,4 @@ export function CitasCard(){
     );
 }
 
-export default CitasCard;
+export default CitasCardAlumno;
