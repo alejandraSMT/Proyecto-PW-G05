@@ -1,10 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 //import BotonProgCita from "./citas/commons/programar_cita/BotonProgramarCita";
 //import BotonVerCita from "./citas/commons/ver_cita/BotonVerCita";
-import CitasHeader from "./citas/commons/citas_header/CitasHeader";
-import { CitasView } from "./citas/CitasView";
-import { CitasViewAlumno } from "./citas/CitasViewAlumno";
-import NoCitas from "./citas/NoCitas";
+import CitasHeader from "./commons/citas_header/CitasHeader";
+import { CitasView } from "./CitasView";
+import { CitasViewAlumno } from "./CitasViewAlumno";
+import NoCitas from "./NoCitas";
 
 function App() {
   return (
