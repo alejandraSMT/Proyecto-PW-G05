@@ -1,9 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import Header from "../Header/Header";
-import TituloPagina from "./TituloPagina";
-import Comentario from "./Comentario";
-import './ComentarioPage.css';
+import Header from "../../Header/Header";
+import TituloPagina from "../components/TituloPagina";
+import Comentario from "../components/Comentario";
+import '../css/ComentarioPage.css';
 import { useState } from 'react';
 
 function ComentarioPage() {

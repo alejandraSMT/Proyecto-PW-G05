@@ -1,5 +1,5 @@
 import { Component } from "react";
-import './TituloPagina.css';
+import '../css/TituloPagina.css';
 
 export class TituloPagina extends Component {
     render() {
