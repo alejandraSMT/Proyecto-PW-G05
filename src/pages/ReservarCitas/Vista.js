@@ -1,7 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card_Docente from "./pages/ReservarCitas/components/Card_Docente";
 import Horario from "./pages/ReservarCitas/components/Horario";
-import Header from "./pages/ReservarCitas/components/Header";
 import "./pages/ReservarCitas/css/Card_Docente.css";
 import "./pages/ReservarCitas/css/Curso.css";
 import "./pages/ReservarCitas/css/Horario.css";
@@ -15,7 +14,7 @@ function MyApp(){ //lo que se mostrata
   return (
     
     <div>
-      <Header/>
+   
       <div class="container">
         <br/>
         <h1>Citas</h1> 
