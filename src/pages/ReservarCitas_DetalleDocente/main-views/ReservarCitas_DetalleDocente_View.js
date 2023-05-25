@@ -1,20 +1,19 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import Card_Docente from "./pages/ReservarCitas/components/Card_Docente";
-import Horario from "./pages/ReservarCitas/components/Horario";
-import "./pages/ReservarCitas/css/Card_Docente.css";
-import "./pages/ReservarCitas/css/Curso.css";
-import "./pages/ReservarCitas/css/Horario.css";
-import "./pages/ReservarCitas/css/Header.css";
+import Card_Docente from "../../ReservarCitas_DetalleDocente/components/Card_Docente.js";
+import Horario from "../../ReservarCitas_DetalleDocente/components/Horario.js";
+import "../../ReservarCitas_DetalleDocente/css/Card_Docente.css";
+import "../../ReservarCitas_DetalleDocente/css/Curso.css";
+import "../../ReservarCitas_DetalleDocente/css/Horario.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import Header from '../../Header/Header.js';
 
 
-
-function MyApp(){ //lo que se mostrata
+function DetalleDocente(){ //lo que se mostrata
   
   return (
     
     <div>
-   
+      <Header/>
       <div class="container">
         <br/>
         <h1>Citas</h1> 
@@ -42,4 +41,4 @@ function MyApp(){ //lo que se mostrata
   );
 }
 
-export default MyApp;
+export default DetalleDocente;

@@ -1,12 +1,11 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-
+import ReservaCitaDetalleDocente from '../../Proyecto-PW-G05/src/pages/ReservarCitas_DetalleDocente/main-views/ReservarCitas_DetalleDocente_View.js'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -23,4 +22,4 @@ function App() {
   );
 }
 
-export default App;
+export default ReservaCitaDetalleDocente;
