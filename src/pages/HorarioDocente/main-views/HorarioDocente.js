@@ -1,4 +1,4 @@
-import {DocenteHorario} from "./DocenteHorario/DocenteHorario";
+import {DocenteHorario} from "../DocenteHorario/DocenteHorario";
 
 function HorarioDocente() {
   return (
