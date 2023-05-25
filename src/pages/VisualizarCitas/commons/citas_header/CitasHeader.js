@@ -9,7 +9,7 @@ export class CitasHeader extends Component{
             <>
                 <div class="general">
                     <div class="container">
-                        <div class="row w-100">
+                        <div class="row w-100 pt-4">
                             <div class="col-6 pb-3">
                                 <header class="header text-start">Mis Citas</header>
                             </div>

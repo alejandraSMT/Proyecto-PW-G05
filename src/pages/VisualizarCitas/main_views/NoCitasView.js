@@ -1,12 +1,13 @@
-import { Component } from "react";
-import BotonProgCita from "./commons/botones/programar_cita/BotonProgramarCita";
+import BotonProgCita from "../commons/botones/programar_cita/BotonProgramarCita";
+import Header from "../../Header/Header";
 
-export function NoCitas(){
+export function NoCitasView(){
     return(
         <>
+            <Header/>
             <div class="general">
                     <div class="container">
-                        <div class="row w-100">
+                        <div class="row w-100 pt-4">
                             <div class="col-6 pb-3">
                                 <header class="header text-start">Mis Citas</header>
                             </div>
@@ -15,9 +16,10 @@ export function NoCitas(){
                 <hr class="divider"/>
             </div>
             <div class="container">
-                <div class="row w-100">
-                    <div class="col p-10">
+                <div class="row justify-content-md-center">
+                    <div class="col col-lg-6 text-center">
                         <h5>Actualmente no tiene citas de Asesoría reservada</h5>
+                        <br/>
                         <BotonProgCita/>
                     </div>
                 </div>
@@ -27,4 +29,4 @@ export function NoCitas(){
     );
 }
 
-export default NoCitas;
+export default NoCitasView;
