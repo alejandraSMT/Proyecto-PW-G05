@@ -20,7 +20,7 @@ function DocenteCitasView(){
       ]
 
       return(
-        <div className="App">
+        <div className="w-100">
             <Header/>
             <CitasHeader/>
             <CitasViewAlumno citasProfesores={citasAlumnos}/>

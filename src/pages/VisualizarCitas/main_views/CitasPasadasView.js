@@ -22,7 +22,7 @@ function CitasPasadasView() {
   ]
 
   return (
-    <div className="App">
+    <div className="w-100">
       <Header/>
       <CitasHeader/>
       <CitasView citasProfesores = {citasProfesores}/>
