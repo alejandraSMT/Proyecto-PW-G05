@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './MisCitas.css';
 import GrillaNombres from './componentes/GrillaNombres';
 import BarradeBusquedaCalendar from './componentes/barraBusquedaCalendar';
 import BarradeBusqueda from './componentes/barradeBusqueda';
 import BotonesFuncion from './componentes/Botones';
 import './componentes/barraestilo.css';
+import Header from '../Header/Header';
 
 
 export default function App() {
@@ -36,10 +38,9 @@ export default function App() {
   }
 
   return (
+    <div className='w-100'>
     <div className='contenedor'>
-      <h5 className='franja'>Atención de Citas</h5>
-      <br/>
-      <br/>
+    <Header />
       <br/>
       <h5 className='titulo'>Reserva de cita</h5>
       <hr className='divider' />
@@ -61,6 +62,7 @@ export default function App() {
       <div className='grilla-container'>
         <GrillaNombres personaCitas={personaCitas} />
       </div>
+    </div>
     </div>
   );
 }
