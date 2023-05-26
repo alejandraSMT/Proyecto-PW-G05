@@ -1,3 +1,6 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './NoCitasView.css';
 import BotonProgCita from "../commons/botones/programar_cita/BotonProgramarCita";
 import Header from "../../Header/Header";
 

@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import CitasHeader from "../commons/citas_header/CitasHeader";
 import CitasViewAlumno from "./subviews/CitasViewAlumno";
 import Header from "../../Header/Header";
