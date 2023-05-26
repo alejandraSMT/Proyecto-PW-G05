@@ -1,8 +1,10 @@
 import {DocenteHorario} from "../DocenteHorario/DocenteHorario";
+import Header from "../../Header/Header";
 
 function HorarioDocente() {
   return (
     <div>
+       <Header/>
       <div className="container">
         <br />
         <h2 className=">Horario">Mis Horarios</h2>
