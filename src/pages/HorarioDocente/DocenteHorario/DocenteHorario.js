@@ -8,15 +8,13 @@ import { HorarioCard } from "../components/HorarioCard";
 
 import React, { useState } from "react";
 
-export function DocenteHorario() {
-  const [DataFormulario, setDataFormulario] = useState({
+export function DocenteHorario() { 
+  const [DataFormulario, setDataFormulario] = useState({ //Iniciar variable DataFormulario para los valores del formulario
     dia: "",
     horaInicio: "",
     horaFin: "",
     enlace: "",
   });
-
-  const [Horarios, setHorarios] = useState([]);
 
   const handleInput = (Event) => {
     const { name, value } = Event.target;
@@ -26,7 +24,7 @@ export function DocenteHorario() {
     }));
   };
 
-  const handleAgregarClick = () => {
+  const handleAgregarClick = () => { //Se hace un set a los valores del formulario al hacer click en el boton
     console.log(DataFormulario);
     setDataFormulario({
       dia: "",
@@ -34,7 +32,6 @@ export function DocenteHorario() {
       horaFin: "",
       enlace: "",
     });
-    setHorarios((prevHorarios) => [...prevHorarios, DataFormulario]);
   };
 
   return (
@@ -100,6 +97,12 @@ export function DocenteHorario() {
       </Row>
       <br></br>
 
+      <HorarioCard
+        contador="1"
+        dia="Lunes"
+        horaInicio="03:00pm"
+        horaFin="05:00pm"
+      />
       <HorarioCard
         contador="2"
         dia="Martes"

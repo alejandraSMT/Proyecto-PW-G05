@@ -1,7 +1,7 @@
 
 //Joaquin
-import Login from './pages/login/login.js';
-export default Login;
+//import Login from './pages/login/login.js';
+//export default Login;
 
 
 
