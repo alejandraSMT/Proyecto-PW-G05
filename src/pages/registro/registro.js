@@ -1,5 +1,6 @@
 import "./registro.css"
 import Formulario from './components/regisForm.js'
+import RegisButton from './components/submitRegisForm.js'
 
 function Registro(){
     return(
@@ -12,7 +13,7 @@ function Registro(){
             </h2>
 
             <Formulario />
-
+            <RegisButton />
         </div>
     );
 }

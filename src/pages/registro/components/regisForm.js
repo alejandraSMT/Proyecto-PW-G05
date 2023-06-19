@@ -31,7 +31,7 @@ function RegisForm(){
                 </Col>
                 <Col>
                     <Form.Group>
-                        <Form.Label id = 'password'>Ingrese Password nuevamente
+                        <Form.Label id = 'password2'>Ingrese Password nuevamente
                         </Form.Label>
                         <Form.Control type="password"></Form.Control>
                     </Form.Group>
@@ -45,7 +45,7 @@ function RegisForm(){
                 
                 <Col>
                     <Form.Group>
-                        <Form.Label>Nombres
+                        <Form.Label id = "name">Nombres
                         </Form.Label>
                         <Form.Control type = "text">
                         </Form.Control>
@@ -53,7 +53,7 @@ function RegisForm(){
                 </Col>
                 <Col>
                     <Form.Group>
-                        <Form.Label>Apellidos
+                        <Form.Label id = "lastname">Apellidos
                         </Form.Label>
                         <Form.Control type = "text">
                         </Form.Control>
@@ -87,7 +87,7 @@ function RegisForm(){
             <Row>
                 <Col>
                     <Form.Group>
-                        <Form.Label>Rol
+                        <Form.Label id = "rol">Rol
                         </Form.Label>
                         <Form.Select defaultValue = "Seleccionar...">
                             <option>Seleccionar...</option>
