@@ -1,0 +1,42 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+.registro{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.registro .regisForm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.regisForm .form-control, .regisForm .form-select {
+    border-color: purple;
+    border-radius: 3px;
+    color: purple;
+    width: 291px;
+    height: 56px;
+}
+
+/* Atributos del texto (label) en el borde superior */
+.regisForm .form-label {
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    transform: translateY(15px) translateX(-2px) scale(0.85);
+    user-select: none;
+    color: purple;
+    line-height: 1rem;
+}
+
+/* Quita la sombra cuando le das click*/
+.regisForm .form-control:focus, .regisForm .form-select:focus {
+    box-shadow: none;
+    border-color: purple;
+    color: purple;
+}
+

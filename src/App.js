@@ -3,6 +3,8 @@
 //import Login from './pages/login/login.js';
 //export default Login;
 
+import Registro from './pages/registro/registro.js';
+export default Registro;
 
 
 //Frank
