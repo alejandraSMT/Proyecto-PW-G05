@@ -1,7 +1,6 @@
 import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
 
-import { Rol } from "./Rol.js";
 import { Universidad } from "./Universidad.js";
 import { Carrera } from "./Carrera.js";
 
@@ -41,6 +40,10 @@ export const Usuario = sequelize.define(
             type: DataTypes.STRING,
             allowNull: false
         },
+        rol: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
         tituloPerfil: {
             type: DataTypes.STRING
         },
@@ -55,16 +58,6 @@ export const Usuario = sequelize.define(
         freezeTableName: true
     }
 )
-
-Usuario .hasMany(Rol, {
-    foreignKey: "rolId",
-    sourceKey: "id"
-})
-
-Rol .belongsTo(Usuario, {
-    foreignKey: "rolId",
-    targetKey: "id"
-})
 
 Usuario .hasMany(Universidad, {
     foreignKey: "universidadId",

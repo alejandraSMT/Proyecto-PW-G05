@@ -5,7 +5,6 @@ import { Profesor } from "./Profesor.js";
 import { Estudiante } from "./Estudiante.js";
 import { Curso } from "./Curso.js";
 import { Horario } from "./Horario.js";
-import { Calificacion } from "./Calificacion.js";
 
 export const Cita = sequelize.define(
     "Cita", {
@@ -13,6 +12,12 @@ export const Cita = sequelize.define(
             type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
+        },
+        puntaje: {
+            type: DataTypes.FLOAT
+        },
+        comentario: {
+            type: DataTypes.STRING
         }
     }, {
         freezeTableName: true
@@ -56,16 +61,6 @@ Cita .hasMany(Horario, {
 
 Horario .belongsTo(Cita, {
     foreignKey: "horarioId",
-    targetKey: "id"
-})
-
-Cita .hasMany(Calificacion, {
-    foreignKey: "calificacionId",
-    sourceKey: "id"
-})
-
-Calificacion .belongsTo(Cita, {
-    foreignKey: "calificacionId",
     targetKey: "id"
 })
 
