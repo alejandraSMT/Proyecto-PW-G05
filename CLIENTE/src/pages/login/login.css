@@ -1,13 +1,21 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-h1 {
-    margin-top: 250px;
+
+.login {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.login h1 {
+    margin-top: 180px;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
-span {
+.login span {
     height: 80px;
     justify-content: center;
     align-items: center;
@@ -18,7 +26,8 @@ span {
     font-weight: bold;
 }
 
-#btns {
+
+.login .loginbuttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -26,21 +35,21 @@ span {
     margin-left: 150px;
 }
 
-.container {
+.login .loginfield {
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
-/* Quita la sombra cuando le das click*/
-.form-control:focus {
+
+.loginfield .form-control:focus {
     box-shadow: none;
     border-color: purple;
     color: purple;
 }
 
-/* Atributos del recuadro de texto */
-.form-control {
+
+.loginfield .form-control {
     border-color: purple;
     border-radius: 3px;
     color: purple;
@@ -48,8 +57,8 @@ span {
     height: 56px;
 }
 
-/* Atributos del texto (label) en el borde superior */
-.form-label {
+
+.loginfield .form-label {
     background-color: white;
     padding-left: 5px;
     padding-right: 5px;
@@ -59,7 +68,7 @@ span {
     line-height: 1rem;
 }
 
-#password {
+.loginfield #password {
     background-color: white;
     padding-left: 5px;
     padding-right: 5px;
@@ -69,19 +78,31 @@ span {
     line-height: 1rem;
 }
 
-#login {
+.loginbuttons #login{
     background-color: #E8DEF8;
     border-radius: 150px;
     padding-left: 13px;
     padding-right: 13px;
     border-color: #E8DEF8;
     color: black;
+    
 }
 
-#exit {
+.loginbuttons #exit{
     color: black;
     background-color: white;
     border-color: white;
     padding-left: 0%;
     padding-right: 0%;
+    transform: scale(1);
+}
+
+.loginbuttons #login:hover{
+    border-width: 0px;
+    transform: scale(1);
+}
+
+.loginbuttons #exit:hover{
+    border-width: 0px;
+    transform: scale(1);
 }

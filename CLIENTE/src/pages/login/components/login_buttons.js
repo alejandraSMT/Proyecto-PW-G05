@@ -5,7 +5,7 @@ import Form from "react-bootstrap/Form";
 
 function Buttons(){
     return(
-        <Form.Group id = "btns">
+        <div className="loginbuttons">
             <Button id = "exit">
                 Salir
             </Button>
@@ -14,7 +14,7 @@ function Buttons(){
                 Ingresar
             </Button>
 
-        </Form.Group>
+        </div>
     );
 }
 

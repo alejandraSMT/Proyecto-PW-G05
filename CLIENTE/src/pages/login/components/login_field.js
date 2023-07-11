@@ -7,7 +7,7 @@ import Row from 'react-bootstrap/Row';
 
 function LogInField(){    
     return(
-        <Container class = "container">
+        <Container className = "loginfield">
             <br></br>
             <Row>
                 <Form.Group>

@@ -64,6 +64,7 @@ export default function App(){
                     // Joaquin
                     <Route index element = {<Registro />} />
                     <Route path = "/registro" element = {<Registro />} />
+                    <Route path = "/login" element = {<Login />} />
 
                     // Frank
                     <Route path = "/reservar" element = {<ReservarCitas_DetalleDocente />} />

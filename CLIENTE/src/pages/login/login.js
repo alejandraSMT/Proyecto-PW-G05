@@ -5,7 +5,7 @@ import Buttons from './components/login_buttons.js';
 
 function LogIn(){
     return (
-        <div>
+        <div className = "login">
             <h1>
                 Sistema de Citas para Atención a Estudiantes
             </h1>
@@ -22,9 +22,7 @@ function LogIn(){
                 </p>
             </span>
 
-            <div>
-                <Buttons />
-            </div>
+            <Buttons />
             
         </div>
         

@@ -60,6 +60,8 @@
     border-color: #E8DEF8;
     color: black;
     font-weight: 500;
+    border-width: 0px;
+    transform: scale(1);
 
 }
 
