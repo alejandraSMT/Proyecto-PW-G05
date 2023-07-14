@@ -1,8 +1,10 @@
 import { sequelize } from './database/database.js';
 import express from 'express';
-
+import {Curso} from './models/Curso.js';
+import {UsuarioCurso} from './models/UsuarioCurso.js'
 // Importar modelos
-import Usuario from './models/Usuario.js';
+import {Usuario} from './models/Usuario.js';
+
 
 const app = express()
 const port = 3001;
@@ -27,6 +29,20 @@ app.get("/create-user", async function(req, res){
     })
 
     res.send("Usuario creado.");
+})
+
+app.get("/create-curso", async function(req,res){
+    const nuevoCurso = await Curso.create({
+        curso_nombre: "Matematicas",
+
+    })
+})
+
+app.get("/create-cita", async function(req,res){
+    const nuevoUsuarioCurso = await UsuarioCurso.create({
+        usu_curso_nombre: "Cita1",
+
+    })
 })
 
 app.get("/", function(req, res){
