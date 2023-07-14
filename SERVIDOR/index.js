@@ -5,12 +5,7 @@ import express from 'express';
 import Usuario from './models/Usuario.js';
 
 const app = express()
-const port = process.env.PORT || 3001;
-
-app.use(cors())
-
-app.use(express.json())
-
+const port = 3001;
 
 async function verificarConexion(){
     try {
@@ -35,8 +30,7 @@ app.get("/create-user", async function(req, res){
 })
 
 app.get("/", function(req, res){
-    res.send("Se conectó correctamente");
-    verificarConexion();
+    res.send("Programación web");
 })
 
 app.listen(port, function(){
