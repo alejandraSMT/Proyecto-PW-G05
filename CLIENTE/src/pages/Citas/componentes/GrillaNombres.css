@@ -1,13 +1,30 @@
 .persona-cita-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    
-  }
-  
-  .persona-cita-item {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: 400px;
+}
 
-    padding: 20px;
-    border-radius: 5px;
+.fila-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.persona-cita-item {
+  width: calc(25% - 10px); /* El 25% asegura 4 tarjetas por fila y los 10px son el margen entre ellas */
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .fila-container {
+    flex-wrap: wrap;
   }
-  
+
+  .persona-cita-item {
+    width: calc(50% - 10px); /* En pantallas más pequeñas, muestra 2 tarjetas por fila */
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}

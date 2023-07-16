@@ -41,7 +41,7 @@ import NoCitasView from "./pages/VisualizarCitas/main_views/NoCitasView";
 
 
 //Andrea
-//import MisCitas from './pages/Citas/MisCitas.js';
+import MisCitas from './pages/Citas/MisCitas.js';
 //export default MisCitas;
 
 
@@ -84,6 +84,7 @@ export default function App(){
                     <Route path = "/nocitas" element = {<NoCitasView />} />
 
                     // Andrea
+                    <Route path = "/citas" element = {<MisCitas />} />
 
                 </Routes>
             </BrowserRouter>
